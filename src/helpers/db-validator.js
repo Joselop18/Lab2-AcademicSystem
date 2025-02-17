@@ -1,4 +1,4 @@
-import Role from '../role/role.model.js';
+import Role from '../role/role.mode.js';
 import Usuario from '../users/user.model.js';
 
 export const esRoleValido = async (role = "") => {

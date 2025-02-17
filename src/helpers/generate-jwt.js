@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 
 export const generarJWT = (uid = '') => {
-       return new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
         
         const payload = { uid };
 
@@ -15,5 +15,5 @@ export const generarJWT = (uid = '') => {
                 err ? (console.log(err), reject("El Token No Se Ha Generado")) : resolve(token);
             }
         );
-       }); 
+    }); 
 }
